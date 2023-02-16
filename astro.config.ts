@@ -11,7 +11,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://porfolio-git-master-javieria.vercel.app/",
+
   markdown: {
     shikiConfig: {
       theme: "dracula",
@@ -33,8 +33,7 @@ export default defineConfig({
   vite: {
     build: {
       assetsInlineLimit: 0
-    }
-
+    },
   },
   output: "server",
   adapter: vercel()

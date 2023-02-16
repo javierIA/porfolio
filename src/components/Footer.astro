@@ -1,0 +1,28 @@
+---
+import { Icon } from "astro-icon";
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+    <address class="footer-contacts">
+        <a
+            class="footer-links--github"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="github"
+            href="https://github.com/javierIA   "
+        >
+            <span class="sr-only">github</span>
+            <Icon name="github" size={18} aria-hidden="true" />
+        </a>
+    </address>
+    <p class="footer-links">
+        <a class="footer-links--rss" href="https://www.linkedin.com/in/xavierfloresx2/" target="_blank"
+            ><span class="sr-only">LinkeIn</span>
+            <Icon name="bi:linkedin" size={18} aria-hidden="true" />
+        </a>
+    </p>
+    <p class="footer-copyright">
+        <span> &#xa9; 2022 - {year} Javier FLores.</span>
+    </p>
+</footer>

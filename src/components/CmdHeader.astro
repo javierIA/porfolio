@@ -1,0 +1,38 @@
+---
+export interface Props {
+    title: string;
+    cmd?: string;
+}
+import "../styles/components/_cmd.scss";
+const { title, cmd = "cd" } = Astro.props;
+const titleLen = title.length + 3;
+---
+
+<header class="cmd container">
+    <p aria-hidden="true" class="ter-fail">
+        <span aria-hidden="true">~ ^Python</span><span
+            class="cmd-ter--fail"
+            aria-hidden="true">~ pip install torch cv2 keras pandas numpy</span
+            >
+
+    </p>
+
+    <p aria-hidden="true" class="ter-fail">
+        <span aria-hidden="true">~ ^JS/TS</span><span
+            class="cmd-ter--fail"
+            aria-hidden="true">~ npm i react next.js</span
+            >
+    </p>
+    <p aria-hidden="true" class="ter-fail">
+        <span aria-hidden="true">~ ^Extras</span><span
+            class="cmd-ter--fail"
+            aria-hidden="true">~ ./Linux.sh && ./Flutter.sh && ./Docker && ./AWS</span
+            >
+    </p>
+    <h1 class="cmd-title" style={`--steps: ${titleLen};`}>
+        <span aria-hidden="true" class="ter-cmd">~ {cmd}&#32;</span>{title}<span
+            aria-hidden="true">/</span
+        >
+    </h1>
+
+</header>

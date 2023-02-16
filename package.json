@@ -1,6 +1,6 @@
 {
     "name": "cmd_theme",
-    "author": "Sébastien Gordano",
+    "author": "Javier Flores ",
     "description": "A starter theme for Astro.",
     "version": "0.0.9",
     "scripts": {
@@ -32,6 +32,6 @@
         "defaults"
     ],
     "dependencies": {
-        "@astrojs/vercel": "0.0.0-monorepos-20221010034923"
+        "@astrojs/vercel": "^3.1.1"
     }
 }

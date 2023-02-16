@@ -7,38 +7,37 @@ import prefetch from "@astrojs/prefetch";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+import vercel from "@astrojs/vercel/serverless";
+
+// https://astro.build/config
 export default defineConfig({
-    site: "https://javierIA.github.io",
-    base: "/portfolio/",
-    markdown: {
-        shikiConfig: {
-            theme: "dracula",
-            wrap: true,
-        },
+
+  markdown: {
+    shikiConfig: {
+      theme: "dracula",
+      wrap: true
+    }
+  },
+  integrations: [sitemap(), image({
+    serviceEntryPoint: "@astrojs/image/sharp"
+  }), compress({
+    css: false,
+    html: {
+      removeComments: true,
+      removeAttributeQuotes: false
     },
-    integrations: [
-        sitemap(),
-        image({
-            serviceEntryPoint: "@astrojs/image/sharp",
-        }),
-        compress({
-            css: false,
-            html: {
-                removeComments: true,
-                removeAttributeQuotes: false,
-            },
-            img: false,
-            js: false,
-            svg: false,
-        }),
-        prefetch(),
-    ],
-    vite: {
-        build: {
-            assetsInlineLimit: 0,
-        },
-        ssr: {
-            external: ['svgo']
-          }
+    img: false,
+    js: false,
+    svg: false
+  }), prefetch()],
+  vite: {
+    build: {
+      assetsInlineLimit: 0
     },
+    ssr: {
+      external: ['svgo']
+    }
+  },
+  output: "server",
+  adapter: vercel()
 });

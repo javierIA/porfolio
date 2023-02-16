@@ -11,7 +11,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "http://localhost:3000",
+    site: "https://porfolio-git-master-javieria.vercel.app/",
   markdown: {
     shikiConfig: {
       theme: "dracula",

@@ -29,7 +29,7 @@ export default defineConfig({
             },
             img: false,
             js: false,
-            svg: true,
+            svg: false,
         }),
         prefetch(),
     ],

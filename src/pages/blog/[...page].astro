@@ -15,8 +15,8 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
     return paginate(posts, { pageSize: 9 });
 }
 const { page } = Astro.props;
-const PageTitle = "Portfolio";
-const desc = "A collection of my work";
+const PageTitle = "Blog";
+const desc = "list of blog posts";
 ---
 
 <BaseLayout title={PageTitle} description={desc} canonicalURL={"blog"}>

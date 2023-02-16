@@ -32,7 +32,6 @@
         "defaults"
     ],
     "dependencies": {
-        "@astrojs/vercel": "^3.1.1"
+        "@astrojs/vercel": "0.0.0-monorepos-20221010034923"
     }
-
 }

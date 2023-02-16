@@ -2,13 +2,11 @@
 type Props = {
     page: Page<CollectionEntry<"blog">>;
 };
-
 import type { Page } from "astro";
 import Card from "../../components/Card.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import type { GetStaticPathsOptions } from "astro";
 import { CollectionEntry, getCollection } from "astro:content";
-
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
     const allPosts = await getCollection("blog");
     const posts = allPosts.filter((post) => !post.data.draft);
@@ -16,7 +14,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 }
 const { page } = Astro.props;
 const PageTitle = "Blog";
-const desc = "list of blog posts";
+const desc = "liste des posts";
 ---
 
 <BaseLayout title={PageTitle} description={desc} canonicalURL={"blog"}>

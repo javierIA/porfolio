@@ -8,7 +8,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://porfolio-g9rsfq1ez-javieria.vercel.app/",
+    site: "https://www.javierflores.software/",
     markdown: {
         shikiConfig: {
             theme: "dracula",

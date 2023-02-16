@@ -8,7 +8,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "http://localhost:3000",
+    site: "https://porfolio-g9rsfq1ez-javieria.vercel.app/",
     markdown: {
         shikiConfig: {
             theme: "dracula",

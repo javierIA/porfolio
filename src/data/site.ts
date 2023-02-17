@@ -53,7 +53,7 @@ export const site: Site = {
             },
             {
                 name: "Linkedin",
-                link: "https://www.linkedin.com/in/javier-flores-x2/",
+                link: "https://www.linkedin.com/in/xavierfloresx2/",
             },
 
         ],

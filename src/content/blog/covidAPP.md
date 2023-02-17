@@ -1,7 +1,7 @@
 ---
-title: Chihuahua COVID-19 Tracker App with Bluetooth Contact Tracing
+title: Chihuahua COVID-19 Tracker App
 author: Javier Flores
-description: "Introducing the Chihuahua COVID-19 Tracker App with Bluetooth Contact Tracing"
+description: "Introducing the Chihuahua COVID-19 Tracker App"
 pubDate: 2020-08-08
 draft: false
 tags: ["Mobile", "Android", "Fluter"]

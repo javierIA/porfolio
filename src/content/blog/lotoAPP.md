@@ -1,5 +1,5 @@
 ---
-title: Industrial Safety Device Detection App -
+title: "Industrial Safety Device Detection App" 
 description: "TensorFlow Lite Object Detection"
 pubDate: 2022-03-03
 draft: false

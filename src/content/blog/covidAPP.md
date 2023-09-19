@@ -1,5 +1,5 @@
 ---
-title: Chihuahua COVID-19 Tracker App
+title: "Chihuahua COVID-19 Tracker App"
 author: Javier Flores
 description: "Introducing the Chihuahua COVID-19 Tracker App"
 pubDate: 2020-08-08
@@ -18,7 +18,7 @@ I worked closely with public health experts and software developers to ensure th
 
 ## Technologies:
 - Flutter
-+ Bluetooth
+- Bluetooth
 - REST API
 - Firebase
 
